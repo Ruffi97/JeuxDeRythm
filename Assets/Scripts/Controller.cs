@@ -5,40 +5,42 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField]
-    private GameObject CursorUp;
+    private Renderer CursorUp;
     [SerializeField]
-    private GameObject CursorDown;
+    private Renderer CursorDown;
     [SerializeField]
-    private GameObject CursorLeft;
+    private Renderer CursorLeft;
     [SerializeField]
-    private GameObject CursorRight;
-
-    private Renderer CursorUpRenderer;
+    private Renderer CursorRight;
 
     void Start()
     {
-        CursorUpRenderer = CursorUp.GetComponent<Renderer>();
+     
     }
 
   
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            CursorUpRenderer.material.SetColor("_IsSelected", Color.white);
+            CursorUp.material.color = Color.white;
            
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        else { CursorUp.material.color = Color.grey; }
+        if (Input.GetKey(KeyCode.DownArrow))
         {
-
+            CursorDown.material.color = Color.white;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else { CursorDown.material.color = Color.grey; }
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-
+            CursorLeft.material.color = Color.white;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        else { CursorLeft.material.color = Color.grey; }
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-
+            CursorRight.material.color = Color.white;
         }
+        else { CursorRight.material.color = Color.grey; }
     }
 }
