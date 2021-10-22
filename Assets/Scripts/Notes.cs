@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Notes : MonoBehaviour
 {
-    GameObject dest;
-    Vector3 destPos;
-    public float speed;
+    private GameObject _dest;
+    private Vector3 _destPos;
+    [SerializeField]
+    private float _speed;
 
     void Start()
     {
-        dest = GameObject.FindGameObjectWithTag("dest");
-        destPos = dest.transform.position;
+        _dest = GameObject.FindGameObjectWithTag("dest");
+        _destPos = _dest.transform.position;
     }
 
     void Update()
     {
-        transform.position += new Vector3(destPos.x - transform.position.x, destPos.y - transform.position.y, 0) * speed * Time.deltaTime;
+        transform.position += new Vector3(_destPos.x - transform.position.x, _destPos.y - transform.position.y, 0) * _speed * Time.deltaTime;
     }
 
     public void OnTriggerEnter(Collider other)

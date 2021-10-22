@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Spawner6
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 0}
-  note: {fileID: 0}
+  note: {fileID: 6560948149595112773, guid: cfb4056cdbe597d4480f4c471e44d083, type: 3}
   count: 3

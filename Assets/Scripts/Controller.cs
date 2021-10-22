@@ -5,13 +5,13 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField]
-    private Renderer CursorUp;
+    private Renderer _CursorUp;
     [SerializeField]
-    private Renderer CursorDown;
+    private Renderer _CursorDown;
     [SerializeField]
-    private Renderer CursorLeft;
+    private Renderer _CursorLeft;
     [SerializeField]
-    private Renderer CursorRight;
+    private Renderer _CursorRight;
 
     void Start()
     {
@@ -23,31 +23,31 @@ public class Controller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            CursorUp.material.color = Color.white;
-            CursorDown.material.color = Color.grey;
-            CursorLeft.material.color = Color.grey;
-            CursorRight.material.color = Color.grey;
+            _CursorUp.material.color = Color.white;
+            _CursorDown.material.color = Color.grey;
+            _CursorLeft.material.color = Color.grey;
+            _CursorRight.material.color = Color.grey;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         { 
-            CursorDown.material.color = Color.white;
-            CursorUp.material.color = Color.grey;
-            CursorLeft.material.color = Color.grey;
-            CursorRight.material.color = Color.grey;
+            _CursorDown.material.color = Color.white;
+            _CursorUp.material.color = Color.grey;
+            _CursorLeft.material.color = Color.grey;
+            _CursorRight.material.color = Color.grey;
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            CursorLeft.material.color = Color.white;
-            CursorDown.material.color = Color.grey;
-            CursorUp.material.color = Color.grey;
-            CursorRight.material.color = Color.grey;
+            _CursorLeft.material.color = Color.white;
+            _CursorDown.material.color = Color.grey;
+            _CursorUp.material.color = Color.grey;
+            _CursorRight.material.color = Color.grey;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            CursorRight.material.color = Color.white;
-            CursorDown.material.color = Color.grey;
-            CursorLeft.material.color = Color.grey;
-            CursorUp.material.color = Color.grey;
+            _CursorRight.material.color = Color.white;
+            _CursorDown.material.color = Color.grey;
+            _CursorLeft.material.color = Color.grey;
+            _CursorUp.material.color = Color.grey;
         }
     }
 }

@@ -6,18 +6,18 @@ using UnityEngine;
 public class Spawner : ScriptableObject
 {
     [SerializeField]
-    private GameObject SpawnPoint;
+    private Transform _SpawnPoint;
     [SerializeField]
-    private GameObject note;
-    float _timer = 0f;
+    private GameObject _note;
+    private float _timer = 0f;
     [SerializeField]
-    private  float count;
+    private  float _count;
     
     void Update()
     {  
-        if (_timer >= count)
+        if (_timer >= _count)
         {
-            Instantiate(note, SpawnPoint.transform.position, Quaternion.identity);
+            Instantiate(_note, _SpawnPoint.position, Quaternion.identity);
             _timer = 0f;
         }
 

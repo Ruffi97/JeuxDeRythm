@@ -1,18 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private List<ScriptableObject> _spawnerList = new List<ScriptableObject>();
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Random rnd = new Random();
+        int SpawnerSelection = rnd.Next(1, 8);
     }
 }
