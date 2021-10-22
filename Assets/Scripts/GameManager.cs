@@ -20,11 +20,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        _spawnerSelection = rnd.Next(1, 8);
+        _spawnerSelection = rnd.Next(0, 7);
         
         if (_spawnerList[_spawnerSelection])
         {
+            Instantiate(_spawnerList[_spawnerSelection]);
             Spawner._SpawnPoint = _spawnPointsList[_spawnerSelection];
         }
+        
     }
 }

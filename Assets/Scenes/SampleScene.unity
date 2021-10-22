@@ -243,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310417686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -354,8 +354,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 334509305}
-  - component: {fileID: 334509304}
   - component: {fileID: 334509306}
+  - component: {fileID: 334509307}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -363,22 +363,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &334509304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334509303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71560877620009c4dadba3d21899cba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CursorUp: {fileID: 0}
-  CursorDown: {fileID: 0}
-  CursorLeft: {fileID: 0}
-  CursorRight: {fileID: 0}
 --- !u!4 &334509305
 Transform:
   m_ObjectHideFlags: 0
@@ -405,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5a1d48aa093804abb6e5a339f6196a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnerList:
+  _spawnerList:
   - {fileID: 11400000, guid: 649669f5bd71d144ba53393a823f32fe, type: 2}
   - {fileID: 11400000, guid: 28c4c804a3898c64e904442130485ce3, type: 2}
   - {fileID: 11400000, guid: 4a70fb4553e3ccf49b10ec2dacf541cc, type: 2}
@@ -414,6 +398,31 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3127b5f29ebf32d4ea00881b2296670c, type: 2}
   - {fileID: 11400000, guid: 4dfcaaf770550eb43b8181f2c2a9830a, type: 2}
   - {fileID: 11400000, guid: 9fd4b1aaa2f49964ea16cf82fd2d4f75, type: 2}
+  _spawnPointsList:
+  - {fileID: 310417687}
+  - {fileID: 717663705}
+  - {fileID: 1511399703}
+  - {fileID: 1616174824}
+  - {fileID: 372032698}
+  - {fileID: 1371867576}
+  - {fileID: 1631986536}
+  - {fileID: 1464332704}
+--- !u!114 &334509307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334509303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71560877620009c4dadba3d21899cba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CursorUp: {fileID: 10457241}
+  _CursorDown: {fileID: 315604241}
+  _CursorLeft: {fileID: 1917959311}
+  _CursorRight: {fileID: 1858217769}
 --- !u!1 &372032697
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372032697}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 16, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -561,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717663704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -712,7 +721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371867575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -742,7 +751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464332703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -28, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -772,7 +781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511399702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 28, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -802,7 +811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616174823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -28, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -832,7 +841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631986535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 28, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834703684}
@@ -1041,7 +1050,7 @@ GameObject:
   - component: {fileID: 1950570213}
   - component: {fileID: 1950570212}
   m_Layer: 0
-  m_Name: superbe-vue-depuis-fenetre-du-train-paire-sieges_198278-3711
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
