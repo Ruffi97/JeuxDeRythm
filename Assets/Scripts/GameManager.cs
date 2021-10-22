@@ -8,10 +8,23 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private List<ScriptableObject> _spawnerList = new List<ScriptableObject>();
-
-    private void Start()
+    [SerializeField] 
+    private List<Transform> _spawnPointsList = new List<Transform>();
+    
+    private int _spawnerSelection;
+    Random rnd = new Random();
+    void Start()
     {
-        Random rnd = new Random();
-        int SpawnerSelection = rnd.Next(1, 8);
+        
+    }
+
+    void Update()
+    {
+        _spawnerSelection = rnd.Next(1, 8);
+        
+        if (_spawnerList[_spawnerSelection])
+        {
+            Spawner._SpawnPoint = _spawnPointsList[_spawnerSelection];
+        }
     }
 }

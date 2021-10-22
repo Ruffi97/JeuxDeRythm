@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Spawners")]
 public class Spawner : ScriptableObject
 {
+    
+    public static Transform _SpawnPoint;
     [SerializeField]
-    private Transform _SpawnPoint;
-    [SerializeField]
-    private GameObject _note;
+    private static GameObject _note;
     private float _timer = 0f;
     [SerializeField]
     private  float _count;
