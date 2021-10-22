@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotesA : MonoBehaviour
+public class Notes : MonoBehaviour
 {
     GameObject dest;
     Vector3 destPos;
@@ -10,13 +10,13 @@ public class NotesA : MonoBehaviour
 
     void Start()
     {
-        dest = GameObject.FindGameObjectWithTag("destA");
+        dest = GameObject.FindGameObjectWithTag("dest");
         destPos = dest.transform.position;
     }
 
     void Update()
     {
-        transform.position += new Vector3((destPos.x - 10f) - transform.position.x, (destPos.y - 7.5f) - transform.position.y, 0) * speed * Time.deltaTime;
+        transform.position += new Vector3(destPos.x - transform.position.x, destPos.y - transform.position.y, 0) * speed * Time.deltaTime;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -31,5 +31,4 @@ public class NotesA : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }
