@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 10457240}
   m_Layer: 0
   m_Name: CursorUp
-  m_TagString: destA
+  m_TagString: dest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 315604240}
   m_Layer: 0
   m_Name: CursorDown
-  m_TagString: Untagged
+  m_TagString: dest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 334509305}
   - component: {fileID: 334509306}
   - component: {fileID: 334509307}
+  - component: {fileID: 334509304}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -363,6 +364,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &334509304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334509303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc8092da8b2104429fad6ebada35fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPointsList:
+  - {fileID: 310417687}
+  - {fileID: 717663705}
+  - {fileID: 1511399703}
+  - {fileID: 1616174824}
+  - {fileID: 372032698}
+  - {fileID: 1371867576}
+  - {fileID: 1631986536}
+  - {fileID: 1464332704}
+  _note: {fileID: 6560948149595112773, guid: cfb4056cdbe597d4480f4c471e44d083, type: 3}
+  _timeBetweenNote: 3
 --- !u!4 &334509305
 Transform:
   m_ObjectHideFlags: 0
@@ -389,24 +413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5a1d48aa093804abb6e5a339f6196a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnerList:
-  - {fileID: 11400000, guid: 649669f5bd71d144ba53393a823f32fe, type: 2}
-  - {fileID: 11400000, guid: 28c4c804a3898c64e904442130485ce3, type: 2}
-  - {fileID: 11400000, guid: 4a70fb4553e3ccf49b10ec2dacf541cc, type: 2}
-  - {fileID: 11400000, guid: 2cd2e3f43504d2743835e74ba87b1f7b, type: 2}
-  - {fileID: 11400000, guid: 1047030123f8b784084d409c0782919c, type: 2}
-  - {fileID: 11400000, guid: 3127b5f29ebf32d4ea00881b2296670c, type: 2}
-  - {fileID: 11400000, guid: 4dfcaaf770550eb43b8181f2c2a9830a, type: 2}
-  - {fileID: 11400000, guid: 9fd4b1aaa2f49964ea16cf82fd2d4f75, type: 2}
-  _spawnPointsList:
-  - {fileID: 310417687}
-  - {fileID: 717663705}
-  - {fileID: 1511399703}
-  - {fileID: 1616174824}
-  - {fileID: 372032698}
-  - {fileID: 1371867576}
-  - {fileID: 1631986536}
-  - {fileID: 1464332704}
 --- !u!114 &334509307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,7 +867,7 @@ GameObject:
   - component: {fileID: 1858217768}
   m_Layer: 0
   m_Name: CursorRight
-  m_TagString: Untagged
+  m_TagString: dest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +963,7 @@ GameObject:
   - component: {fileID: 1917959310}
   m_Layer: 0
   m_Name: CursorLeft
-  m_TagString: destB
+  m_TagString: dest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - note
-  - destA
-  - destB
+  - dest
   layers:
   - Default
   - TransparentFX

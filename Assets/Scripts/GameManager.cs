@@ -5,14 +5,9 @@ using UnityEngine;
 using Random = System.Random;
 
 public class GameManager : MonoBehaviour
-{
-    [SerializeField]
-    private List<ScriptableObject> _spawnerList = new List<ScriptableObject>();
-    [SerializeField] 
-    private List<Transform> _spawnPointsList = new List<Transform>();
+{   
+    private float _timer = 0f;
     
-    private int _spawnerSelection;
-    Random rnd = new Random();
     void Start()
     {
         
@@ -20,13 +15,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        _spawnerSelection = rnd.Next(0, 7);
-        
-        if (_spawnerList[_spawnerSelection])
-        {
-            Instantiate(_spawnerList[_spawnerSelection]);
-            Spawner._SpawnPoint = _spawnPointsList[_spawnerSelection];
-        }
+     
         
     }
 }
