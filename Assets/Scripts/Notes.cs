@@ -12,6 +12,7 @@ public class Notes : MonoBehaviour
     private float _speed;
     private float _shortestDest;
     private float _distanceToDest;
+    private bool _isDestroyable = false;
 
     void Start()
     {
@@ -35,23 +36,35 @@ public class Notes : MonoBehaviour
         {
             _dest = _nearestDest.transform;
 
-            transform.position += new Vector3((_dest.transform.position.x - 1f) - transform.position.x, (_dest.transform.position.y - 1f) - transform.position.y,
+            transform.position += new Vector3(_dest.transform.position.x - transform.position.x, _dest.transform.position.y - transform.position.y,
             _dest.transform.position.z - transform.position.z) * _speed * Time.deltaTime;
         }
 
-        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (_isDestroyable)
+            {
+                Destroy(gameObject);
+                GameManager._score += 200;
+                Debug.Log(GameManager._score);
+            }
+            else
+            {
+                GameManager._score -= 100;
+                Debug.Log(GameManager._score);
+            }
+        }
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Destroy(gameObject);
-        }
+        _isDestroyable = true;        
     }
 
     public void OnTriggerExit(Collider other)
     {
         Destroy(gameObject);
+        GameManager._score -= 100;
+        Debug.Log(GameManager._score);
     }
 }

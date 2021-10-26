@@ -7,7 +7,7 @@ using Random = System.Random;
 public class GameManager : MonoBehaviour
 {   
     private float _timer = 0f;
-    
+    public static int _score = 0;
     void Start()
     {
         
