@@ -45,12 +45,12 @@ public class Notes : MonoBehaviour
             if (_isDestroyable)
             {
                 Destroy(gameObject);
-                GameManager._score += 200;
+                GameManager._score += 200f;
                 Debug.Log(GameManager._score);
             }
             else
             {
-                GameManager._score -= 100;
+                GameManager._score -= 100f;
                 Debug.Log(GameManager._score);
             }
         }
@@ -58,11 +58,14 @@ public class Notes : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        _isDestroyable = true;        
+        if (other.GetComponentInParent<Renderer>().material.color == Color.white)
+        _isDestroyable = true;
+        else { _isDestroyable = false; }
     }
 
     public void OnTriggerExit(Collider other)
     {
+        _isDestroyable = false;
         Destroy(gameObject);
         GameManager._score -= 100;
         Debug.Log(GameManager._score);
