@@ -13,7 +13,7 @@ public class Notes : MonoBehaviour
     private float _shortestDest;
     private float _distanceToDest;
     public static bool _isDestroyable = false;
-
+    
     void Start()
     {
         _possibleDest = GameObject.FindGameObjectsWithTag("dest");
@@ -50,7 +50,9 @@ public class Notes : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other.GetComponentInParent<Renderer>().material.color == Color.white)
-        _isDestroyable = true;
+        {
+            _isDestroyable = true;
+        }    
         else { _isDestroyable = false; }
     }
 
