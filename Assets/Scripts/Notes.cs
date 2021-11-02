@@ -12,7 +12,7 @@ public class Notes : MonoBehaviour
     private float _speed;
     private float _shortestDest;
     private float _distanceToDest;
-    private bool _isDestroyable = false;
+    public static bool _isDestroyable = false;
 
     void Start()
     {
@@ -42,17 +42,8 @@ public class Notes : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            if (_isDestroyable)
-            {
-                Destroy(gameObject);
-                GameManager._score += 200f;
-                Debug.Log(GameManager._score);
-            }
-            else
-            {
-                GameManager._score -= 100f;
-                Debug.Log(GameManager._score);
-            }
+            GameManager.Scoring();
+            Destroy(gameObject);
         }
     }
 
@@ -67,7 +58,6 @@ public class Notes : MonoBehaviour
     {
         _isDestroyable = false;
         Destroy(gameObject);
-        GameManager._score -= 100;
-        Debug.Log(GameManager._score);
+        GameManager.Scoring();
     }
 }
