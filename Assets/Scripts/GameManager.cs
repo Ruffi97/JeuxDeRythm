@@ -7,36 +7,36 @@ using Random = System.Random;
 public class GameManager : MonoBehaviour
 {   
     private float _timer = 0f;
-    public static float score = 0f;
-    public static int comboLenght = 0;
-    public static float comboMultiplier = 0f;
-    void Start()
+    private static float _score = 0f;
+    private static int _comboLenght = 0;
+    private static float _comboMultiplier = 0f;
+
+    private void Start()
     {
         
     }
-
-    void Update()
+    
+    private void Update()
     {
-     
-        
+        _timer += Time.fixedDeltaTime;
     }
 
-    public static void Scoring()
+    public static void Scoring(float scoreModifier)
     {
-        if (Notes._isDestroyable)
+        if (scoreModifier == 200)
         {
-            comboLenght++;
-            score += 200f * (1f + comboMultiplier);
-            comboMultiplier += 0.1f;
+            _score += scoreModifier * (1f + _comboMultiplier);
+            _comboLenght++;
+            _comboMultiplier += 0.1f;
         }
-        else
+        else if (scoreModifier == 100)
         {
-            comboLenght = 0;
-            score -= 100f;
-            comboMultiplier = 0f;
+            _score -= scoreModifier;
+            _comboLenght = 0;
+            _comboMultiplier = 0;
         }
-        Debug.Log("Combo : " + comboLenght);
-        Debug.Log("Score : " + score);
+        Debug.Log("Combo : " + _comboLenght);
+        Debug.Log("Score : " + _score);
         return;
     }
 }

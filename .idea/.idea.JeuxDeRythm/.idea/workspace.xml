@@ -14,10 +14,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Notes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub_Scripts/HubControls.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hub_Scripts/LevelSelect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Notes.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zr2GptUYjhiu3xL2jmoiafj5nl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -75,6 +73,7 @@
       <workItem from="1637318304000" duration="1457000" />
       <workItem from="1637324278473" duration="8894000" />
       <workItem from="1637406957001" duration="19145000" />
+      <workItem from="1637589540013" duration="9608000" />
     </task>
     <servers />
   </component>
@@ -94,6 +93,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

@@ -10,19 +10,18 @@ public class Notes : MonoBehaviour
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
+    private Vector3 _position;
+    private float _distance;
     private float _shortestDest;
     private float _distanceToDest;
-    public static bool _isDestroyable = false;
-    
-    void Start()
+    public static bool isDestroyable = false;
+
+    private void Start()
     {
+        _position = transform.position;
         _possibleDest = GameObject.FindGameObjectsWithTag("dest");
         _shortestDest = Mathf.Infinity;
         
-    }
-
-    void Update()
-    {
         foreach (GameObject dest in _possibleDest)
         {
             _distanceToDest = Vector3.Distance(transform.position, dest.transform.position);
@@ -35,31 +34,27 @@ public class Notes : MonoBehaviour
         if (_nearestDest != null)
         {
             _dest = _nearestDest.transform;
-
-            transform.position += new Vector3(_dest.transform.position.x - transform.position.x, _dest.transform.position.y - transform.position.y,
-            _dest.transform.position.z - transform.position.z) * _speed * Time.deltaTime;
         }
+    }
 
+    private void Update()
+    {
+        
+        _position += new Vector3(_dest.transform.position.x - _position.x, _dest.transform.position.y - _position.y,
+            _dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
+        transform.position = _position;
+
+        _distance = Vector3.Distance(_dest.transform.position, this.transform.position);
+        
         if (Input.GetKey(KeyCode.Space))
         {
-            GameManager.Scoring();
-            Destroy(gameObject);
+            if ( _distance >= 0f && _distance <= 0.4f && _dest.GetComponentInParent<Renderer>().material.color == Color.white)
+            {
+                
+                GameManager.Scoring(200f);
+                Destroy(gameObject);
+            }
+            else{ GameManager.Scoring(100f); }
         }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.GetComponentInParent<Renderer>().material.color == Color.white)
-        {
-            _isDestroyable = true;
-        }    
-        else { _isDestroyable = false; }
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        _isDestroyable = false;
-        Destroy(gameObject);
-        GameManager.Scoring();
     }
 }

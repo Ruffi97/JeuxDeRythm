@@ -13,12 +13,6 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private Renderer _cursorRight;
 
-    void Start()
-    {
-     
-    }
-
-  
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow))
