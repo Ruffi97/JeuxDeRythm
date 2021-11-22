@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef05afb3-3807-4da1-8715-994a64ef8665" name="Changes" comment="" />
+    <list default="true" id="ef05afb3-3807-4da1-8715-994a64ef8665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d/Disque Summertide.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2d/Disque Summertide.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d/disque Found you.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2d/disque Found you.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2d/disque back to 95.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2d/disque back to 95.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hub.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hub_Scripts/HubControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hub_Scripts/HubControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +83,7 @@
       <workItem from="1637318304000" duration="1457000" />
       <workItem from="1637324278473" duration="8894000" />
       <workItem from="1637406957001" duration="19145000" />
+      <workItem from="1637597297849" duration="2630000" />
     </task>
     <servers />
   </component>
@@ -94,6 +103,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
