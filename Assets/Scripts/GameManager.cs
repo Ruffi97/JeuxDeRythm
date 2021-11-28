@@ -23,18 +23,19 @@ public class GameManager : MonoBehaviour
 
     public static void Scoring(float scoreModifier)
     {
-        if (scoreModifier == 200)
+        if (scoreModifier == 200f)
         {
             _score += scoreModifier * (1f + _comboMultiplier);
             _comboLenght++;
             _comboMultiplier += 0.1f;
         }
-        else if (scoreModifier == 100)
+        else if (scoreModifier == 100f)
         {
             _score -= scoreModifier;
             _comboLenght = 0;
-            _comboMultiplier = 0;
+            _comboMultiplier = 0.0f;
         }
+        else { }
         Debug.Log("Combo : " + _comboLenght);
         Debug.Log("Score : " + _score);
         return;

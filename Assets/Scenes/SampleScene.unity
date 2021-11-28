@@ -425,10 +425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71560877620009c4dadba3d21899cba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cursorUp: {fileID: 10457241}
-  _cursorDown: {fileID: 315604241}
-  _cursorLeft: {fileID: 1917959311}
-  _cursorRight: {fileID: 1858217769}
+  cursors:
+  - {fileID: 10457241}
+  - {fileID: 315604241}
+  - {fileID: 1917959311}
+  - {fileID: 1858217769}
 --- !u!1 &372032697
 GameObject:
   m_ObjectHideFlags: 0
