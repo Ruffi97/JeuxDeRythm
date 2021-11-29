@@ -52,7 +52,7 @@ public class Controller : MonoBehaviour
             GameManager.Scoring(200f);
             Destroy(GameObject.FindGameObjectWithTag("note"));
             Notes._dest.GetComponentInParent<Renderer>().material.color = Color.green;
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.2f);
             Notes._dest.GetComponentInParent<Renderer>().material.color = Color.white;
         }
         else 
@@ -60,7 +60,7 @@ public class Controller : MonoBehaviour
             GameManager.Scoring(100f);
             Notes._dest.GetComponentInParent<Renderer>().material.color = Color.red;
         }
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         Notes._dest.GetComponentInParent<Renderer>().material.color = Color.white;
 
     }
