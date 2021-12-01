@@ -42,5 +42,4 @@ public partial class LevelScrolling : MonoBehaviour {
     private void Scroller() {
         _isCharged = true;
     }
-
 }
