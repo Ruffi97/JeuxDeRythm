@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 896831415}
   - component: {fileID: 896831414}
   m_Layer: 3
-  m_Name: pp
+  m_Name: post-process
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1318,7 +1318,7 @@ MonoBehaviour:
   - {fileID: 352069812}
   - {fileID: 318596409}
   - {fileID: 731721238}
-  _note: {fileID: 6560948149595112773, guid: cfb4056cdbe597d4480f4c471e44d083, type: 3}
+  _note: {fileID: 1266229627421127943, guid: 67aac115b2cb4844a94985ea33eb6560, type: 3}
   _timeBetweenNote: 2
 --- !u!114 &1208089042
 MonoBehaviour:

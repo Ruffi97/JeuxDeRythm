@@ -12,7 +12,7 @@ public class synchro : MonoBehaviour
     {
         try
         {
-            sw = new StreamWriter("C:\\Users\\geoffrey.ruffini\\JeuxDeRythm\\Assets\\Test.txt");
+            sw = new StreamWriter("A:\\Users\\Geo\\Documents\\GitHub\\JeuxDeRythm\\Assets\\Test.txt");
         }
         catch(Exception e)
         {
@@ -24,7 +24,7 @@ public class synchro : MonoBehaviour
         }
     }
     
-    void Update()
+    void FixedUpdate()
     {
         _timer += Time.deltaTime;
 
