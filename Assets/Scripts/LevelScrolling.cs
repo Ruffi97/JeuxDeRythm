@@ -29,7 +29,7 @@ public partial class LevelScrolling : MonoBehaviour {
                 count++;
             }
         }
-        Invoke("Scroller", 2f);
+        Invoke("Scroller", 0f);
     }
 
     private void FixedUpdate() {
