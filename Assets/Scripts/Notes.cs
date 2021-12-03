@@ -6,12 +6,12 @@ public class Notes : MonoBehaviour
 {
     GameObject[] _possibleDest;
 
-    private Transform _dest;
+    public static Transform _dest;
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
     private Vector3 _position;
-    private float _distance;
+    public static float _distance;
     private float _shortestDest;
     private float _distanceToDest;
     public static bool isDestroyable = false;
@@ -38,23 +38,15 @@ public class Notes : MonoBehaviour
     }
 
     private void Update()
-    {
-        
+    {       
         _position += new Vector3(_dest.transform.position.x - _position.x, _dest.transform.position.y - _position.y,
             _dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
         transform.position = _position;
-
         _distance = Vector3.Distance(_dest.transform.position, this.transform.position);
-        
-        if (Input.GetKey(KeyCode.Space))
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if ( _distance >= 0f && _distance <= 0.4f && _dest.GetComponentInParent<Renderer>().material.color == Color.white)
-            {
-                
-                GameManager.Scoring(200f);
-                Destroy(gameObject);
-            }
-            else{ GameManager.Scoring(100f); }
+            StartCoroutine(Controller.isPressed());
         }
     }
 }
