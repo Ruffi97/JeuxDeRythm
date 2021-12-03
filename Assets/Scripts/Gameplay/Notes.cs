@@ -9,7 +9,7 @@ public class Notes : MonoBehaviour
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
-    //private bool isFailed;
+    private bool isFailed;
     private Vector3 _position;
     public static float _distance;
     private float _shortestDest;
@@ -52,8 +52,8 @@ public class Notes : MonoBehaviour
         if (_distance < 0.001 && _distance > 0)
         {
             Destroy(gameObject);
-            //isFailed = true;
-            //Cursors.SpawnParticles(isFailed);
+            isFailed = true;
+            Cursors.SpawnParticles(isFailed);
         }
     }
 }

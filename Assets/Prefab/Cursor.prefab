@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 10507966152241079}
   - component: {fileID: 10507966152241078}
   - component: {fileID: 243725507668062547}
+  - component: {fileID: 4738113547866420601}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: dest
@@ -102,6 +103,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d825d20f22a671f44bc74922391bb849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4738113547866420601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10507966152241081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ee786c0dbb2814bb894bc1398671f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scaleValue: 0.16
+  _curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.010524765
+      outSlope: -0.010524765
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.4519774
+    - serializedVersion: 3
+      time: 0.17139645
+      value: 0.9749471
+      inSlope: 2.8110898
+      outSlope: 2.8110898
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4504626
+      value: 0.0277673
+      inSlope: -0.32666934
+      outSlope: -0.32666934
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7913305
+      value: 0.8113212
+      inSlope: -0.79468286
+      outSlope: -0.79468286
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13055572
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _duration: 1
 --- !u!1 &6707693873759738992
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,8 +302,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469803043418945980, guid: fef613e6c620f3c4995a6798cc5fec0b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469803043418945980, guid: fef613e6c620f3c4995a6798cc5fec0b, type: 3}
       propertyPath: ColorModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469803043418945981, guid: fef613e6c620f3c4995a6798cc5fec0b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4469803043418945982, guid: fef613e6c620f3c4995a6798cc5fec0b, type: 3}
       propertyPath: m_Name

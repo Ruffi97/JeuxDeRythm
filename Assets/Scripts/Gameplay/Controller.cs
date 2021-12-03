@@ -49,16 +49,16 @@ public class Controller : MonoBehaviour
     {
         if (Notes._distance >= 0f && Notes._distance <= 0.08f && Notes.Dest.GetComponentInChildren<SpriteRenderer>().material.color == Color.white)
         {
-            //bool isfailed = false;
+            bool isfailed = false;
             GameManager.Scoring(200f);
             Destroy(GameObject.FindGameObjectWithTag("note"));
-            //Cursors.SpawnParticles(isfailed);
+            Cursors.SpawnParticles(isfailed);
         }
         else 
         { 
-            //bool isfailed = true;
+            bool isfailed = true;
             GameManager.Scoring(100f);
-            //Cursors.SpawnParticles(isfailed);
+            Cursors.SpawnParticles(isfailed);
             
         }
     }
