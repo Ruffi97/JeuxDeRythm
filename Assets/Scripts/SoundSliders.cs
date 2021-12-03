@@ -10,7 +10,8 @@ public class SoundSliders : MonoBehaviour
 
 {
     public string volumeName;
-    private Text volumeLabel;
+    public Text volumeLabel;
+    [SerializeField] private RectTransform FxHolder;
 
     Slider _Slider
     {
@@ -20,14 +21,15 @@ public class SoundSliders : MonoBehaviour
     private void Start()
     {
         ResetSliderValue();
-        
+
         _Slider.onValueChanged.AddListener(delegate { UpdateValueOnChange(_Slider.value); });
     }
 
     public void UpdateValueOnChange(float value)
     {
         if (volumeLabel != null)
-            volumeLabel.text = Mathf.Round(value * 100.0f).ToString() + "%";
+            volumeLabel.text = volumeName + "\n" +  Mathf.Round(value * 100.0f).ToString() + "%";
+        FxHolder.rotation = Quaternion.Euler(new Vector3(0f, 0f, -value * 360));
 
         if (Settings.profiles)
         {

@@ -813,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ville (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 464001342910112830, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 464001343233939430, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: m_IsActive
       value: 0
