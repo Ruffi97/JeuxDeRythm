@@ -5,11 +5,11 @@ using UnityEngine;
 public class Notes : MonoBehaviour
 {
     GameObject[] _possibleDest;
-
-    public static Transform _dest;
+    public static Transform Dest;
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
+    //private bool isFailed;
     private Vector3 _position;
     public static float _distance;
     private float _shortestDest;
@@ -33,20 +33,27 @@ public class Notes : MonoBehaviour
         }
         if (_nearestDest != null)
         {
-            _dest = _nearestDest.transform;
+            Dest = _nearestDest.transform;
         }
     }
 
     private void Update()
     {       
-        _position += new Vector3(_dest.transform.position.x - _position.x, _dest.transform.position.y - _position.y,
-            _dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
+        _position += new Vector3(Dest.transform.position.x - _position.x, Dest.transform.position.y - _position.y,
+            Dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
         transform.position = _position;
-        _distance = Vector3.Distance(_dest.transform.position, this.transform.position);
+        _distance = Vector3.Distance(Dest.transform.position, this.transform.position);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(Controller.isPressed());
+            Controller.isPressed();
+        }
+
+        if (_distance < 0.001 && _distance > 0)
+        {
+            Destroy(gameObject);
+            //isFailed = true;
+            //Cursors.SpawnParticles(isFailed);
         }
     }
 }
