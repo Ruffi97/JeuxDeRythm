@@ -9,7 +9,6 @@ public class Notes : MonoBehaviour
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
-    private bool isFailed;
     private Vector3 _position;
     public static float _distance;
     private float _shortestDest;
@@ -38,9 +37,8 @@ public class Notes : MonoBehaviour
     }
 
     private void Update()
-    {       
-        _position += new Vector3(Dest.transform.position.x - _position.x, Dest.transform.position.y - _position.y,
-            Dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
+    {
+        _position = Vector3.MoveTowards(_position, Dest.transform.position, _speed * Time.deltaTime);
         transform.position = _position;
         _distance = Vector3.Distance(Dest.transform.position, this.transform.position);
 
@@ -49,11 +47,11 @@ public class Notes : MonoBehaviour
             Controller.isPressed();
         }
 
-        if (_distance < 0.001 && _distance > 0)
+        if (_distance < 0.001f && _distance > 0f)
         {
             Destroy(gameObject);
-            isFailed = true;
-            Cursors.SpawnParticles(isFailed);
+            GameManager.Scoring(100f);
+            Cursors.SpawnParticles(3);
         }
     }
 }

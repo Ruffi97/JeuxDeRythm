@@ -47,18 +47,29 @@ public class Controller : MonoBehaviour
     }
     public static void isPressed()
     {
-        if (Notes._distance >= 0f && Notes._distance <= 0.08f && Notes.Dest.GetComponentInChildren<SpriteRenderer>().material.color == Color.white)
+        int success = 3;
+        
+        if (Notes.Dest.GetComponentInChildren<SpriteRenderer>().material.color == Color.white)
         {
-            bool isfailed = false;
-            GameManager.Scoring(200f);
+            if (Notes._distance >= 0.0000000000001f && Notes._distance <= 0.06f)
+            {
+                success = 1;
+                GameManager.Scoring(300f);
+            }
+            else if (Notes._distance >= 0.07f && Notes._distance <= 0.12f)
+            {
+                success = 2;
+                GameManager.Scoring(150f);
+            }
             Destroy(GameObject.FindGameObjectWithTag("note"));
-            Cursors.SpawnParticles(isfailed);
+            GameManager.Scoring(100f);
+            Cursors.SpawnParticles(success);
         }
         else 
         { 
-            bool isfailed = true;
+            success = 3;
             GameManager.Scoring(100f);
-            Cursors.SpawnParticles(isfailed);
+            Cursors.SpawnParticles(success);
             
         }
     }

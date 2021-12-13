@@ -935,7 +935,7 @@ AudioSource:
   m_GameObject: {fileID: 808125786}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8791431410036915532, guid: f3dd7fc620966c0469cab684b806a263, type: 2}
   m_audioClip: {fileID: 8300000, guid: 144475e3f56253e409001e5dd12d71fc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2459,6 +2459,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5597250967926016822, guid: 2fb14910b5e3e264d82f4f65b9fc3713, type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 8300000, guid: 144475e3f56253e409001e5dd12d71fc, type: 3}
+    - target: {fileID: 5597250967926016822, guid: 2fb14910b5e3e264d82f4f65b9fc3713, type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 808125787}
     - target: {fileID: 5597250967926016823, guid: 2fb14910b5e3e264d82f4f65b9fc3713, type: 3}
       propertyPath: m_Name
       value: Canvas
