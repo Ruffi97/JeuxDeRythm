@@ -6,6 +6,8 @@ TagManager:
   tags:
   - note
   - dest
+  - particles01
+  - particles02
   layers:
   - Default
   - TransparentFX
