@@ -2,34 +2,43 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = System.Random;
 
 public class GameManager : MonoBehaviour
-{   
+{
+    public static GameManager access;
+
     [SerializeField]
     private List<Transform> _spawnPointsList = new List<Transform>();
     [SerializeField]
     private AudioSource audio;
     [SerializeField]
     private GameObject _note;
-    
-    private float _timer = 0f;
+
+    private Vector3 SpawnerSelected;
+    private float _timer;
     private static float _score = 0f;
     private static int _comboLenght = 0;
     private static float _comboMultiplier = 0f;
     public Note[] chanson1;
-    
+
     private void Start()
     {
-        
+        access = this;
     }
-    
     private void Update()
     {
+        int index = 0;
         _timer = audio.time;
-        if (audio.time >= Note.spawnTime)
+
+        foreach (Note i in chanson1)
         {
-            //Instantiate(_note, , Quaternion.identity);
+            if (_timer >= i.spawnTime)
+            {
+                SpawnerSelected = new Vector3(_spawnPointsList[index].position.x, _spawnPointsList[index].position.y, _spawnPointsList[index].position.z);
+                
+                Instantiate(_note, SpawnerSelected, Quaternion.identity);
+            }
+            index++;
         }
     }
 
@@ -63,19 +72,18 @@ public class GameManager : MonoBehaviour
 [Serializable]
 public class Note
 {
-    public enum SpawnPoint
+    public enum SpawnPoint : int
     {
         TopLeft,
-        TopCornerLeft,
+        TopCornerLef1,
         TopRight, 
         TopCornerRight,
         DownLeft,
         DownCornerLeft,
         DownRight, 
-        DownCornerRight
+        DownCornerRigh
     }
     
     public SpawnPoint spawnPoint;
-    public static float spawnTime;
-    
+    public float spawnTime; 
 }
