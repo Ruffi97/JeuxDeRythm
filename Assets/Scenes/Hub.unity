@@ -12648,6 +12648,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 32932988072428115, guid: 439685e955798b54aae0db2f3fc38398, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9b761123ba52843a4ac64c7ee227cc, type: 3}
     - target: {fileID: 32932988072428124, guid: 439685e955798b54aae0db2f3fc38398, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
