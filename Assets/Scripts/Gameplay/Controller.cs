@@ -16,34 +16,38 @@ public class Controller : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (!PauseMenu.GameIsPaused)
         {
-            cursors[0].material.color = Color.white;
-            cursors[1].material.color = Color.grey;
-            cursors[2].material.color = Color.grey;
-            cursors[3].material.color = Color.grey;
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                cursors[0].material.color = Color.white;
+                cursors[1].material.color = Color.grey;
+                cursors[2].material.color = Color.grey;
+                cursors[3].material.color = Color.grey;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                cursors[1].material.color = Color.white;
+                cursors[0].material.color = Color.grey;
+                cursors[2].material.color = Color.grey;
+                cursors[3].material.color = Color.grey;
+            }
+            else if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                cursors[2].material.color = Color.white;
+                cursors[1].material.color = Color.grey;
+                cursors[0].material.color = Color.grey;
+                cursors[3].material.color = Color.grey;
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                cursors[3].material.color = Color.white;
+                cursors[1].material.color = Color.grey;
+                cursors[2].material.color = Color.grey;
+                cursors[0].material.color = Color.grey;
+            }
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            cursors[1].material.color = Color.white;
-            cursors[0].material.color = Color.grey;
-            cursors[2].material.color = Color.grey;
-            cursors[3].material.color = Color.grey;
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            cursors[2].material.color = Color.white;
-            cursors[1].material.color = Color.grey;
-            cursors[0].material.color = Color.grey;
-            cursors[3].material.color = Color.grey;
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            cursors[3].material.color = Color.white;
-            cursors[1].material.color = Color.grey;
-            cursors[2].material.color = Color.grey;
-            cursors[0].material.color = Color.grey;
-        }
+        
     }
     public static void isPressed()
     {
