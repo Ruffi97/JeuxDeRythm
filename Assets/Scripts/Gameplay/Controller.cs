@@ -6,7 +6,7 @@ public class Controller : MonoBehaviour
 {
     [SerializeField]
     private SpriteRenderer[] cursors = new SpriteRenderer[4];
-
+    
     private void Start()
     {
         cursors[0].material.color = Color.grey;
@@ -46,7 +46,7 @@ public class Controller : MonoBehaviour
                 cursors[2].material.color = Color.grey;
                 cursors[0].material.color = Color.grey;
             }
-        }       
+        }
     }
 
     [System.Obsolete]
@@ -56,7 +56,7 @@ public class Controller : MonoBehaviour
         
         if (Notes.Dest.GetComponentInChildren<SpriteRenderer>().material.color == Color.white)
         {
-            if (Notes._distance >= 0.000000000000000000001f && Notes._distance <= 0.06f)
+            if (Notes._distance >= 0.000000001f && Notes._distance <= 0.06f)
             {
                 success = 1;
                 GameManager.Scoring(300f);
@@ -66,7 +66,7 @@ public class Controller : MonoBehaviour
                 success = 2;
                 GameManager.Scoring(150f);
             }
-            Destroy(GameObject.FindGameObjectWithTag("note"));
+            Destroy(GameObject.FindGameObjectWithTag("active"));
             GameManager.Scoring(100f);
             Cursors.SpawnParticles(success);
         }
@@ -75,7 +75,19 @@ public class Controller : MonoBehaviour
             success = 3;
             GameManager.Scoring(100f);
             Cursors.SpawnParticles(success);
-            
+        }
+
+        if (success == 1)
+        {
+            HealthBar.HealthBarModifier(300f);
+        }
+        else if (success == 2)
+        {
+            HealthBar.HealthBarModifier(150f);
+        }
+        else if (success == 3)
+        {
+            HealthBar.HealthBarModifier(100f);
         }
     }
 }

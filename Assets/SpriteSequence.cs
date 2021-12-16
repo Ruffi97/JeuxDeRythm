@@ -9,5 +9,4 @@ public partial class LevelScrolling
         public Sprite Sprite;
         public int Number;
     }
-
 }

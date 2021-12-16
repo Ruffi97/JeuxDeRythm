@@ -18,8 +18,7 @@ public class GameManager : MonoBehaviour
     private float BPM;
     [SerializeField]
     private float _endSheetMusic;
-
-    public static GameObject newNote;
+    
     private Transform SpawnerSelected;
     private float _timer;
     private int index;
@@ -42,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         if (audio.time >= spawnTime && audio.time <= _endSheetMusic)
         {
-            newNote = Instantiate(_note, SpawnerSelected.position, Quaternion.identity) as GameObject;
+            Instantiate(_note, SpawnerSelected.position, Quaternion.identity);
             spawnTime += _beatsDelay;
         }
     }

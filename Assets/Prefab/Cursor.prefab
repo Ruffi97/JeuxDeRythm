@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 10507966152241077}
   - component: {fileID: 10507966152241079}
   - component: {fileID: 10507966152241078}
-  - component: {fileID: 243725507668062547}
   - component: {fileID: 4738113547866420601}
   m_Layer: 0
   m_Name: Cursor
@@ -91,18 +90,6 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &243725507668062547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10507966152241081}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d825d20f22a671f44bc74922391bb849, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4738113547866420601
 MonoBehaviour:
   m_ObjectHideFlags: 0
