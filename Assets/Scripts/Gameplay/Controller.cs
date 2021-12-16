@@ -49,6 +49,8 @@ public class Controller : MonoBehaviour
         }
         
     }
+
+    [System.Obsolete]
     public static void isPressed()
     {
         int success = 3;

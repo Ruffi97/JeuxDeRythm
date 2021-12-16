@@ -14,6 +14,7 @@ public class Cursors : MonoBehaviour
         CursorTransform = Notes.Dest.GetComponentInChildren<Transform>();
     }
 
+    [System.Obsolete]
     public static void SpawnParticles(int success)
     {
         if (success == 1)

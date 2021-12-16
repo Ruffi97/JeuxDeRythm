@@ -2,46 +2,48 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager access;
 
     [SerializeField]
-    private List<Transform> _spawnPointsList = new List<Transform>();
+    private List<Transform> spawnPoints = new List<Transform>();
     [SerializeField]
-    private AudioSource audio;
+    private new AudioSource audio;
     [SerializeField]
     private GameObject _note;
+    [SerializeField]
+    private float BPM;
 
-    private Vector3 SpawnerSelected;
+    public static GameObject newNote;
+    private Transform SpawnerSelected;
     private float _timer;
+    private int index;
+    private float _beatsDelay;
+    private float spawnTime = 0f;
     private static float _score = 0f;
     private static int _comboLenght = 0;
     private static float _comboMultiplier = 0f;
-    public Note[] chanson1;
+    private Random rnd = new Random();
 
     private void Start()
-    {
+    {  
         access = this;
+        _beatsDelay = 60f / BPM;
     }
     private void Update()
     {
-        int index = 0;
-        _timer = audio.time;
+        index = rnd.Next(0, 7);
+        SpawnerSelected = spawnPoints[index];
 
-        foreach (Note i in chanson1)
+        if (audio.time >= spawnTime && audio.time <= 118f)
         {
-            if (_timer >= i.spawnTime)
-            {
-                SpawnerSelected = new Vector3(_spawnPointsList[index].position.x, _spawnPointsList[index].position.y, _spawnPointsList[index].position.z);
-                
-                Instantiate(_note, SpawnerSelected, Quaternion.identity);
-            }
-            index++;
+            newNote = Instantiate(_note, SpawnerSelected.position, Quaternion.identity) as GameObject;
+            spawnTime += _beatsDelay;
         }
     }
-
     public static void Scoring(float scoreModifier)
     {
         if (scoreModifier == 300f)
@@ -67,23 +69,4 @@ public class GameManager : MonoBehaviour
         Debug.Log("Score : " + _score);
         return;
     }
-}
-
-[Serializable]
-public class Note
-{
-    public enum SpawnPoint : int
-    {
-        TopLeft,
-        TopCornerLef1,
-        TopRight, 
-        TopCornerRight,
-        DownLeft,
-        DownCornerLeft,
-        DownRight, 
-        DownCornerRigh
-    }
-    
-    public SpawnPoint spawnPoint;
-    public float spawnTime; 
 }
