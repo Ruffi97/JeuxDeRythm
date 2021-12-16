@@ -14,15 +14,21 @@ public class Cursors : MonoBehaviour
         CursorTransform = Notes.Dest.GetComponentInChildren<Transform>();
     }
 
-    public static void SpawnParticles(bool isFailed)
+    [System.Obsolete]
+    public static void SpawnParticles(int success)
     {
-        if (!isFailed)
+        if (success == 1)
         {
-            Notes.Dest.GetComponentInChildren<ParticleSystem>().Play();
             Notes.Dest.GetComponentInChildren<ParticleSystem>().startColor = Color.green;
+            Notes.Dest.GetComponentInChildren<ParticleSystem>().Play();
             CursorTransform.DOScale(0.16f, 0.5f);
         }
-        else if (isFailed)
+        else if (success == 2)
+        {
+            Notes.Dest.GetComponentInChildren<ParticleSystem>().startColor = Color.yellow;
+            Notes.Dest.GetComponentInChildren<ParticleSystem>().Play();
+        }
+        else if (success == 3)
         {
             Notes.Dest.GetComponentInChildren<ParticleSystem>().startColor = Color.red;
             Notes.Dest.GetComponentInChildren<ParticleSystem>().Play();

@@ -9,7 +9,6 @@ public class Notes : MonoBehaviour
     private GameObject _nearestDest = null;
     [SerializeField]
     private float _speed;
-    private bool isFailed;
     private Vector3 _position;
     public static float _distance;
     private float _shortestDest;
@@ -21,26 +20,15 @@ public class Notes : MonoBehaviour
         _position = transform.position;
         _possibleDest = GameObject.FindGameObjectsWithTag("dest");
         _shortestDest = Mathf.Infinity;
-        
-        foreach (GameObject dest in _possibleDest)
-        {
-            _distanceToDest = Vector3.Distance(transform.position, dest.transform.position);
-            if(_distanceToDest < _shortestDest)
-            {
-                _shortestDest = _distanceToDest;
-                _nearestDest = dest;
-            }
-        }
-        if (_nearestDest != null)
-        {
-            Dest = _nearestDest.transform;
-        }
     }
 
+    [System.Obsolete]
     private void Update()
-    {       
-        _position += new Vector3(Dest.transform.position.x - _position.x, Dest.transform.position.y - _position.y,
-            Dest.transform.position.z - _position.z) * _speed * Time.deltaTime;
+    {
+
+        FindClosestTarget();
+
+        _position = Vector3.MoveTowards(_position, Dest.transform.position, _speed * Time.deltaTime);
         transform.position = _position;
         _distance = Vector3.Distance(Dest.transform.position, this.transform.position);
 
@@ -49,11 +37,28 @@ public class Notes : MonoBehaviour
             Controller.isPressed();
         }
 
-        if (_distance < 0.001 && _distance > 0)
+        if (_distance < 0.01f && _distance > 0f )
         {
             Destroy(gameObject);
-            isFailed = true;
-            Cursors.SpawnParticles(isFailed);
+            GameManager.Scoring(100f);
+            Cursors.SpawnParticles(3);
+        }
+    }
+
+    public void FindClosestTarget()
+    {
+        foreach (GameObject dest in _possibleDest)
+        {
+            _distanceToDest = Vector3.Distance(transform.position, dest.transform.position);
+            if (_distanceToDest < _shortestDest)
+            {
+                _shortestDest = _distanceToDest;
+                _nearestDest = dest;
+            }
+        }
+        if (_nearestDest != null)
+        {
+            Dest = _nearestDest.transform;
         }
     }
 }
