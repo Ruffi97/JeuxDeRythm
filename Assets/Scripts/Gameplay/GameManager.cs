@@ -11,11 +11,6 @@ public class GameManager : MonoBehaviour
     private static int _comboLenght = 0;
     private static float _comboMultiplier = 0f;
 
-    private void Start()
-    {
-        
-    }
-    
     private void Update()
     {
         _timer += Time.fixedDeltaTime;
