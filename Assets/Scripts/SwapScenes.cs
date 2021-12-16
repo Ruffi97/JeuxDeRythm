@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class QuitMenu : MonoBehaviour
+public class SwapScenes : MonoBehaviour
 {
-    public void LoadMenu()
+    public string scene;
+    
+    public void LoadTheScene()
     {
         SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene(scene);
     }
 }
