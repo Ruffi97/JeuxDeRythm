@@ -1467,7 +1467,7 @@ Transform:
   m_LocalPosition: {x: 1.265, y: 1.133, z: 3.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1982100742}
+  - {fileID: 962880672}
   - {fileID: 2055518286}
   m_Father: {fileID: 308353070}
   m_RootOrder: 1
@@ -3491,7 +3491,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9d4346f164a0d68418607d3417c009e5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 971908437307f8f44949da0911e9e334, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4915,6 +4915,88 @@ Transform:
   m_Father: {fileID: 1742016108}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 15.308, y: -90, z: -90}
+--- !u!1 &962880671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962880672}
+  - component: {fileID: 962880673}
+  m_Layer: 0
+  m_Name: Sir mer 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962880672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962880671}
+  m_LocalRotation: {x: -0, y: -0.00000011920926, z: -0, w: 1}
+  m_LocalPosition: {x: 2.355, y: -1.1579885, z: -1.265387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 268386671}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &962880673
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962880671}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: 80028b3d586be8e47ac4590d9440eb06, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.7926829, y: 1.8951219}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &980738959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9962,88 +10044,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1982100741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1982100742}
-  - component: {fileID: 1982100743}
-  m_Layer: 0
-  m_Name: Sir mer 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1982100742
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982100741}
-  m_LocalRotation: {x: -0, y: -0.000000059604645, z: -0, w: 1}
-  m_LocalPosition: {x: 2.382589, y: -1.1579885, z: -1.2653868}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 268386671}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1982100743
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982100741}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 0f9d956f6e96e5d44aab4cd7d43d6c4d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.7926829, y: 1.8951219}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1984135395
 GameObject:
   m_ObjectHideFlags: 0
@@ -10463,7 +10463,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ad4d13ff5c0e9d346ab753eaedebacaf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad4d13ff5c0e9d346ab753eaedebacaf, type: 3}
       propertyPath: m_LocalScale.x
@@ -10990,7 +10990,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[0].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[1].Number
       value: 1
@@ -10998,7 +10998,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[1].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[2].Number
       value: 3
@@ -11006,7 +11006,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[2].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[3].Number
       value: 1
@@ -11014,7 +11014,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[3].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[4].Number
       value: 4
@@ -11022,7 +11022,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[4].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[5].Number
       value: 1
@@ -11030,7 +11030,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[5].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[6].Number
       value: 6
@@ -11038,7 +11038,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[6].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[7].Number
       value: 1
@@ -11046,7 +11046,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[7].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[8].Number
       value: 4
@@ -11054,7 +11054,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[8].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[9].Number
       value: 1
@@ -11062,7 +11062,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[9].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[10].Number
       value: 3
@@ -11070,7 +11070,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[10].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[11].Number
       value: 1
@@ -11078,7 +11078,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[11].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[12].Number
       value: 5
@@ -11086,7 +11086,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[12].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[13].Number
       value: 1
@@ -11094,7 +11094,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[13].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[14].Number
       value: 3
@@ -11102,7 +11102,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[14].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[15].Number
       value: 1
@@ -11110,7 +11110,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[15].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[16].Number
       value: 1
@@ -11118,7 +11118,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[16].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[17].Number
       value: 7
@@ -11126,7 +11126,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[17].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[18].Number
       value: 1
@@ -11134,7 +11134,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[18].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[19].Number
       value: 5
@@ -11142,7 +11142,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[19].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[20].Number
       value: 1
@@ -11150,7 +11150,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[20].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[21].Number
       value: 5
@@ -11158,7 +11158,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[21].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[22].Number
       value: 1
@@ -11166,7 +11166,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[22].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[23].Number
       value: 3
@@ -11174,7 +11174,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[23].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[24].Number
       value: 1
@@ -11182,7 +11182,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[24].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[25].Number
       value: 6
@@ -11190,7 +11190,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[25].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a4dbdc75943829e4d8e19ddca5a1a7d8, type: 3}
+      objectReference: {fileID: 21300000, guid: 92a1a56248a2ac54d940147967726ef6, type: 3}
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[26].Number
       value: 1
@@ -11198,7 +11198,7 @@ PrefabInstance:
     - target: {fileID: 4373517833617378260, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: SpriteSequences.Array.data[26].Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60d2f961e9d6df34bb912623f4f03274, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e1b193af9818e44a975174526267ab1, type: 3}
     - target: {fileID: 6677291577346774522, guid: 805a10a034df5f34eaf6d295024b8e56, type: 3}
       propertyPath: m_IsActive
       value: 0
