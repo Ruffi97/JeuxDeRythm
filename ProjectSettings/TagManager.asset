@@ -9,6 +9,7 @@ TagManager:
   - particles01
   - particles02
   - active
+  - score
   layers:
   - Default
   - TransparentFX
