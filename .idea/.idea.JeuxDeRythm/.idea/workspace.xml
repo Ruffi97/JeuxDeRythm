@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef05afb3-3807-4da1-8715-994a64ef8665" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" afterDir="false" />
-    </list>
+    <list default="true" id="ef05afb3-3807-4da1-8715-994a64ef8665" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +98,7 @@
       <workItem from="1639611800229" duration="3167000" />
       <workItem from="1639615029170" duration="3747000" />
       <workItem from="1639645965992" duration="2586000" />
-      <workItem from="1639649593153" duration="4929000" />
+      <workItem from="1639649593153" duration="5263000" />
     </task>
     <servers />
   </component>
