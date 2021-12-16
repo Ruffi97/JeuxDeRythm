@@ -46,8 +46,7 @@ public class Controller : MonoBehaviour
                 cursors[2].material.color = Color.grey;
                 cursors[0].material.color = Color.grey;
             }
-        }
-        
+        }       
     }
 
     [System.Obsolete]
@@ -57,7 +56,7 @@ public class Controller : MonoBehaviour
         
         if (Notes.Dest.GetComponentInChildren<SpriteRenderer>().material.color == Color.white)
         {
-            if (Notes._distance >= 0.0000000000001f && Notes._distance <= 0.06f)
+            if (Notes._distance >= 0.000000000000000000001f && Notes._distance <= 0.06f)
             {
                 success = 1;
                 GameManager.Scoring(300f);
