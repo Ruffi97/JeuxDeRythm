@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -36,5 +37,11 @@ public class HealthBar : MonoBehaviour
       health -= 0.1f;
       UpdateHealthBar();
     }
+    if(health <= 0)
+        {
+            PlayerPrefs.SetFloat("_score", GameManager._score);
+            SceneManager.LoadScene("Defeat");
+            HealthBarModifier(300f);
+        }
   }
 }

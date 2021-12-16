@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,13 +28,13 @@ public class GameManager : MonoBehaviour
     private int index;
     private float _beatsDelay;
     private float spawnTime = 0f;
-    private static float _score = 0f;
+    public static float _score = 0f;
     private static int _comboLenght = 0;
     private static float _comboMultiplier = 0f;
-    private Random rnd = new Random();  
+    private Random rnd = new Random();
 
     private void Start()
-    {     
+    {
         access = this;
         _beatsDelay = 60f / BPM;
     }
@@ -47,6 +48,13 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(_note, SpawnerSelected.position, Quaternion.identity);
             spawnTime += _beatsDelay;
+        }
+
+        if (!audio.isPlaying)
+        {
+            PlayerPrefs.SetFloat("_score", _score);
+            SceneManager.LoadScene("Victory");
+            HealthBar.HealthBarModifier(300f);
         }
     }
     public static void Scoring(float scoreModifier)

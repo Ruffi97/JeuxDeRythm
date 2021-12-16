@@ -37,14 +37,14 @@ public class Notes : MonoBehaviour
             Controller.isPressed();
         }
 
-        if (_distance <= 0.5f)
+        if (_distance <= 0.4f)
         {
             this.tag = "active";
         }
 
-        if (_distance <= 0.01f && _distance >= 0f )
+        if (_distance <= 0.001f && _distance >= 0f )
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             GameManager.Scoring(100f);
             HealthBar.HealthBarModifier(100f);
             Cursors.SpawnParticles(3);
