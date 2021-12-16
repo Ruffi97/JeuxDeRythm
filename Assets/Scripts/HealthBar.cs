@@ -25,13 +25,15 @@ public class HealthBar : MonoBehaviour
     {
       health = 1f;
       UpdateHealthBar();
-    } else if (healthbarInfluencer == 150f)
+    } 
+    else if (healthbarInfluencer == 150f)
     {
-      health += maxHealth / 10f;
+      health += 0.1f;
       UpdateHealthBar();
-    }else if (healthbarInfluencer == 100f)
+    }
+    else if (healthbarInfluencer == 100f)
     {
-      health -= maxHealth / 10f;
+      health -= 0.1f;
       UpdateHealthBar();
     }
   }

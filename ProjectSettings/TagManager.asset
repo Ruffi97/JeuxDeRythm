@@ -8,6 +8,7 @@ TagManager:
   - dest
   - particles01
   - particles02
+  - active
   layers:
   - Default
   - TransparentFX
