@@ -45,6 +45,8 @@ public class Controller : MonoBehaviour
             cursors[0].material.color = Color.grey;
         }
     }
+
+    [System.Obsolete]
     public static void isPressed()
     {
         int success = 3;
