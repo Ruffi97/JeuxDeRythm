@@ -4,26 +4,32 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-  public Image healthBarImage;
-  private float health = 1f;
-  private float maxHealth = 1f;
+  public Image getHealthBar;
+  public static Image healthBarImage;
+  private static float health = 1f;
+  private static float maxHealth = 1f;
 
-  public void UpdateHealthBar() 
+  private void Start()
+  {
+    healthBarImage = getHealthBar;
+  }
+
+  public static void UpdateHealthBar() 
   {
     healthBarImage.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1f);
   }
 
-  public float HealthBarModifier()
+  public static void HealthBarModifier(float healthbarInfluencer)
   {
-    if ()
+    if (healthbarInfluencer == 300f)
     {
       health = 1f;
       UpdateHealthBar();
-    } else if ()
+    } else if (healthbarInfluencer == 150f)
     {
-      health += maxHealth * 1.10f;
+      health += maxHealth / 10f;
       UpdateHealthBar();
-    }else if ()
+    }else if (healthbarInfluencer == 100f)
     {
       health -= maxHealth / 10f;
       UpdateHealthBar();
