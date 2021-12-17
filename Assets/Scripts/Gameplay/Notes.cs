@@ -42,7 +42,7 @@ public class Notes : MonoBehaviour
             this.tag = "active";
         }
 
-        if (_distance <= 0.001f && _distance >= 0f )
+        if (_distance <= 0.001f && _distance >= 0f)
         {
             Destroy(this.gameObject);
             GameManager.Scoring(100f);
