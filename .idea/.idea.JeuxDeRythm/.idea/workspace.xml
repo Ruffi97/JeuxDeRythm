@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ef05afb3-3807-4da1-8715-994a64ef8665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JeuxDeRythm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2d/fond ville.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2d/fond ville.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Defeat.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Defeat.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hub.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hub.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Victory.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Victory.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreditsMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreditsMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuitMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuitMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +110,8 @@
       <workItem from="1639671018922" duration="719000" />
       <workItem from="1639673028981" duration="909000" />
       <workItem from="1639682838597" duration="1838000" />
+      <workItem from="1639692992954" duration="34000" />
+      <workItem from="1639693055410" duration="333000" />
     </task>
     <servers />
   </component>
