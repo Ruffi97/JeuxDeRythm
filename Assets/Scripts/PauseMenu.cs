@@ -51,13 +51,8 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        HealthBar.HealthBarModifier(300f);
         SceneManager.LoadScene (SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Hub");
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        AudioSource.Play();
     }
 }

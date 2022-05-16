@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     private static int _comboLenght = 0;
     private static float _comboMultiplier = 0f;
     private Random rnd = new Random();
+    private bool endGame = false;
 
     private void Start()
     {
@@ -50,7 +51,11 @@ public class GameManager : MonoBehaviour
             spawnTime += _beatsDelay;
         }
 
-        if (!audio.isPlaying)
+        if (audio.time >= _endSheetMusic)
+        {
+            endGame = true;
+        }
+        if (!audio.isPlaying && endGame)
         {
             PlayerPrefs.SetFloat("_score", _score);
             SceneManager.LoadScene("Victory");
